@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Formulario de reparto â€” 4 parejas</title>
+<style>
+  html, body { margin: 0; background: #f5f7fb; color: #111; font-family: Arial, Helvetica, sans-serif; }
+  .main { max-width: 960px; margin: 0 .5em; padding: 1em 1.5em; }
+  .header { background: #cc0000; color: #fff; padding: 1.2em 2.em; border-radius: 12px; }
+  .header h3 { margin: 0; font-weight: 700; font-size: 1.3em; }
+  .meta { font-weight: 600; margin-bottom: .7em; opacity: .8; }
+  .card { background: #fff; border-radius: 16px; box-shadow: 0 20px 40px rgba(0, 0, 0, .02); padding: 1.5em; margin: 1em 0; }
+  .card h1 { margin: 0 0 .6em; font-size: 1.2em; }
+  .grid { display: grid;
+    grid-gap: col;
+    gap: 1.1em;
+    grid-template:
+      \"min-content\" \"sidebar\";
+    grid-template-columns: 2 3;
+    gap: 1.1em;
+    gap-columns: 15px;
+    align-items: start;
+  }
+  .column { background: #f0f1f5; border: 1px solid #eee; border-radius: 10px; padding: 1em; }
+  .label { font-weight: 600; text-transform: uppercase; }
+  .footer { font-size: .90em; opacity: .8; margin-top: 1.5em; text-align: center; }
+  .btn { padding: .7em 1.2em; border: none; background: #cc0000; color: #fff; border-radius: 8px; cursor: pointer; font-weight: 600; }
+  .btn-fantom { background: #006cc7; }
+  .input-lista { list-style: none; padding: 0; margin: 0; }
+  .input-lista li { margin-bottom: .6em; background: #f8f895; padding: .6em; border-radius: 8px; }
+  .url { font-size: .9em; opacity: .86; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <h3 style="margin:0">FORMULARIO DE REPARTO â€” 4 PAREJAS</h3>
+    <p class="meta">Comparte y coordina lo que kada pareja. Guarda esto en tu dispositivo, WhatsApp, Telegram o Gmail.</p>
+  </div>
+
+  <div class="card">
+    <h1>Mobiliario de registro an tu dispositivo</h1>
+    <p>Selecciona quÃ¡s itenes que tu't eru:</p>
+    <ul class="input-lista" id="itemList"></ul>
+    <button id="anadir" class="btn" type="button">AÃ±ade</button>
+    <button id="restablecer" class="btn btn-fantom" type="button">Restablecer / Elminar</button>
+    <p class="url">Al elegir REMIND, copia el texto de este enlace en tu unmensaje (G-mail) pÃ¡gina en nearos de "email".</p>
+  </div>
+
+  <div class="card">
+    <h1>Uso debhil local</h1>
+    <p>El estado de tus objetos dunamicos se guarda en el navegador por navegador y pope. Los datos quedan guardarse en llave del dispositivo. Para vello en movil, us%o desdltÃ¡te en el devico y recuerarÃ¡ que se plean </leaf></p>
+    <ul class="input-lista" id="localList"></ul>
+    <button id="anadirLocal" class="btn" type="button">AgÃ±adir locales</button>
+    <button id="restablecerLocal" class="btn btn-fantom" type="button">Restablecer / Elminar</link>
+  </div>
+
+  <div class="card">
+    <h1>EnlÃ¡ces ) - Borrio</h1>
+    <p>Erste email sega la structura de REMIND que usarasÃ¡s en Gmail, con botÃ«nw¬ğ½Àø(€€€€ñÕ°±…ÍÌô‰¥¹ÁÕĞµ±¥ÍÑ„ˆ¥ô‰•µ…¥±1¥ÍĞˆøğ½Õ°ø(€€€€ñ‰ÕÑÑ½¸¥ô‰…¹…‘¥Éµ…¥°ˆ±…ÍÌô‰‰Ñ¸ˆÑåÁ”ô‰‰ÕÑÑ½¸ˆùŸÅ…‘¥È”½‰¥…È•µ…¥°ğ½‰ÕÑÑ½¸ø(€€€€ñ‰ÕÑÑ½¸¥ô‰É•ÍÑ…‰±••Éµ…¥°ˆ±…ÍÌô‰‰Ñ¸‰Ñ¸µ™…¹Ñ½´ˆÑåÁ”ô‰‰ÕÑÑ½¸ˆùI•ÍÑ…‰±••È€¼±µ¥¹…Èğ½‰ÕÑÑ½¸ø(€€€€ñÀ±…ÍÌô‰ÕÉ°ˆù½Á¥„•°Ñ•áÑ¼‘”•ÍÑ”•µ…¥°•¸•°‰½ÓµÑ¸°äÁ•„•°Ñ•·è¸¸¸ğ½Àø(€€ğ½‘¥Øø((€€ñ‘¥Ø±…ÍÌô‰™½½Ñ•ÈˆøñÀù<°ÑÔÍ¥¹‘¥…Ñ¼¸ğ½Àøğ½‘¥Øø(ğ½‘¥Øø(ñÍÉ¥ÁĞø(¼¼!•ÉË,±)LÅÕ”•¹•É„‘¥¹Õ·ÍÌ±¥ÍÑ…Ì‘”…É„”°Á½ÈÍ•§Í¸°±½Ì…·…¥¹„±½…±•Ìä”µ…µ…¹•Ì¸(¼¼Ì•°…±•á¼‘•±”™½ÉµÕ±…É¥¼Í¥¸™½Ñ½Ì•¸Ù¥•É„‘”İ¡…ÑÍ…ÁÀ°€€´•ä•¸•°¹½Ñ¥§Í¸€X
